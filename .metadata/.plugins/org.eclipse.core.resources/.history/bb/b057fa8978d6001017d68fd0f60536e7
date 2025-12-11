@@ -1,0 +1,22 @@
+package com.tcs.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tcs.dto.OrderResponseDto;
+
+@RestController
+@RequestMapping("/api/v1")
+public class OrderController {
+
+	@GetMapping
+	public OrderResponseDto sendOrder()
+	{
+		
+		return new OrderResponseDto(0, null, 0, 0, null, null);
+	}
+	
+	
+	
+}

@@ -1,0 +1,24 @@
+@RestController
+@RequestMapping("/api/v1")
+public class OrderController {
+
+    @Autowired
+    private WebClient webClient;
+
+    @GetMapping("/order/{id}")
+    public Mono<OrderResponseDto> sendOrder(@PathVariable int id) {
+
+        return webClient.get()
+                .uri("http://localhost:9000/api/v1/user/" + id)
+                .retrieve()
+                .bodyToMono(User.class)
+                .map(user -> new OrderResponseDto(
+                        10001,
+                        "laptop",
+                        45000.8,
+                        user.getId(),
+                        user.getName(),
+                        user.getEmail()
+                ));
+    }
+}

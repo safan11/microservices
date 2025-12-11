@@ -1,0 +1,38 @@
+package com.tcs.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.tcs.dto.OrderResponseDto;
+import com.tcs.dto.User;
+
+import reactor.core.publisher.Mono;
+
+@RestController
+@RequestMapping("/api/v1")
+public class OrderController {
+
+    @Autowired
+    private WebClient webClient;
+
+    @GetMapping("/order/{id}")
+    public Mono<OrderResponseDto> sendOrder(@PathVariable int id) {
+
+        return webClient.get()
+                .uri("http://localhost:9000/api/v1/user/" + id)
+                .retrieve()
+                .bodyToMono(User.class)
+                .map(user -> new OrderResponseDto(
+                        10001,
+                        "laptop",
+                        45000.8,
+                        user.getId(),
+                        user.getName(),
+                        user.getEmail()
+                ));
+    }
+}

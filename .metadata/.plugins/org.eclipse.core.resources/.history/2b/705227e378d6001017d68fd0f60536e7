@@ -1,0 +1,8 @@
+package com.tcs.dto;
+
+public class User {
+
+	int id;
+	String name;
+	
+}

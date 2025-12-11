@@ -1,0 +1,50 @@
+0:03:17 Microsoft.Shutdown.TabStripModel.ShouldRunUnloadListenerBeforeClosing_false
+0:03:17 Tab3 RenderProcessGone
+0:03:17 Microsoft.UnloadController.ClearUnloadState
+0:03:17 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
+0:03:17 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
+0:03:17 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+0:03:17 Microsoft.UnloadController.ClearUnloadState
+0:03:17 Browser3 Close Tab3 at 0
+0:03:17 Tab3 WebContentsDestroyed
+0:03:17 Microsoft.UnloadController.TabStripEmpty
+0:03:17 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:03:17 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:03:17 Microsoft.Shutdown.OnWindowClosing
+0:03:17 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:03:17 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:03:17 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+0:03:17 Widget Closed: BrowserWidget
+0:03:17 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:03:17 Microsoft.Shutdown.OnWindowClosing
+0:03:17 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
+0:03:17 Microsoft.Browser_Removed
+0:03:17 Microsoft.NewBrowser_Popup
+0:03:17 Microsoft.BrowserList.AddBrowser
+0:03:17 Browser4 Insert active Tab4 at 0
+0:03:17 Tab4 StartNav27 #auto_toplevel
+0:03:17 Tab4 StartNav28 #typed
+0:03:17 Tab4 FinishNav27
+0:03:17 Tab4 PageLoad
+0:03:17 Tab4 FinishNav28
+0:03:17 Tab4 PageLoad
+0:03:25 Tab4 StartNav29 #typed
+0:03:25 Tab4 FinishNav29
+0:03:25 Tab4 PageLoad
+0:03:31 Tab4 StartNav30 #typed
+0:03:31 Tab4 FinishNav30
+0:03:31 Tab4 PageLoad
+0:03:32 Tab4 StartNav31 #typed
+0:03:32 Tab4 FinishNav31
+0:03:32 Tab4 PageLoad
+0:03:37 Tab4 StartNav32 #typed
+0:03:37 Tab4 FinishNav32
+0:03:37 Tab4 PageLoad
+0:03:38 Tab4 StartNav33 #typed
+0:03:38 Tab4 FinishNav33
+0:03:38 Tab4 PageLoad
+0:03:47 Tab4 StartNav34 #typed
+0:03:47 Tab4 FinishNav34
+0:03:47 Tab4 PageLoad
+0:05:10 Memory Pressure: Moderate
+0:06:01 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp

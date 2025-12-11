@@ -1,0 +1,10 @@
+package com.tcs.dto;
+
+public class OrderResponseDto {
+
+	private int id;
+	private String item;
+	private double price;
+	private String username;
+	private String email;
+}
