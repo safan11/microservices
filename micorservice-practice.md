@@ -4,7 +4,7 @@
 
 ##  Problem Statement
 
-Design and implement a **ONE-TO-ONE Microservices system** using **Spring Boot and MySQL**.
+Design and implement a **Microservices system** using **Spring Boot and MySQL**.
 
 The system must consist of **two independent microservices**:
 
